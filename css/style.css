@@ -1,59 +1,6 @@
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;
 
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
+1,100..900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -291,7 +238,7 @@ h4 {
   color: #FE0000;
 }
 
-.no-webp .hero {
+.no-webp .hero{
   background: url(../img/hero-bg.png) no-repeat right; }
 
 .hero__headline {
@@ -452,7 +399,7 @@ h4 {
   gap: 75px;
 }
 
-.no-webp .about__image {
+.no-webp .about__image{
   background: url(../img/about-bg.png) no-repeat right; }
 
 .about__image {
@@ -1064,7 +1011,7 @@ h4 {
   font-weight: 500;
 }
 
-.no-webp .service__hero {
+.no-webp .service__hero{
   background: url(../img/service-bg.png) no-repeat right; }
 
 .service__hero {
@@ -1581,8 +1528,8 @@ h4 {
   }
 }
 
-.webp .hero { background: url(../img/hero-bg.webp) no-repeat right; }
+.webp .hero{ background: url(../img/hero-bg.webp) no-repeat right; }
 
-.webp .about__image { background: url(../img/about-bg.webp) no-repeat right; }
+.webp .about__image{ background: url(../img/about-bg.webp) no-repeat right; }
 
-.webp .service__hero { background: url(../img/service-bg.webp) no-repeat right; }
+.webp .service__hero{ background: url(../img/service-bg.webp) no-repeat right; }
