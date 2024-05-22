@@ -1,5 +1,6 @@
 import fs from 'fs';
-import fonter from 'gulp-fonter-fix';
+// import fonter from 'gulp-fonter-fix';
+import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
 export const otfToTtf = () => {
