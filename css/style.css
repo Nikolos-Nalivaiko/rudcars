@@ -74,8 +74,11 @@ h6 {
   font-size: inherit;
 }
 
-body {
+* {
   font-family: "Montserrat", sans-serif;
+}
+
+body {
   line-height: 1.5;
   color: #161616;
 }
