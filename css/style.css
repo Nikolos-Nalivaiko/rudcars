@@ -590,10 +590,18 @@ h4 {
   position: relative;
 }
 
-.no-webp .service__block-extensive-image {
+.service__block-extensive-text {
+  max-width: 550px;
+}
+
+.service__block-extensive-btn {
+  max-width: 425px;
+}
+
+.no-webp .webp .service__block-extensive-image {
   background: url(../img/service3.png) no-repeat left; }
 
-.service__block-extensive-image {
+.webp .service__block-extensive-image {
   position: absolute;
   right: 0;
   top: 50%;
@@ -601,14 +609,6 @@ h4 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 520px;
-}
-
-.service__block-extensive-text {
-  max-width: 550px;
-}
-
-.service__block-extensive-btn {
-  max-width: 425px;
 }
 
 .contacts__inner {
@@ -1388,7 +1388,7 @@ h4 {
     padding-bottom: 60px;
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     width: 700px;
   }
 }
@@ -1575,7 +1575,7 @@ h4 {
     padding-bottom: calc(20px + 40 * (100vw - 320px) / (1600 - 320));
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     width: calc(200px + 500 * (100vw - 768px) / (1600 - 768));
   }
 }
@@ -1723,11 +1723,11 @@ h4 {
     padding-right: 20px;
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     width: 200px;
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     top: 0;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -1771,7 +1771,7 @@ h4 {
     padding-top: calc(195px + 155 * (100vw - 320px) / (1600 - 320));
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     height: calc(200px + 200 * (100vw - 320px) / (1600 - 320));
   }
 }
@@ -1809,7 +1809,7 @@ h4 {
     padding-top: 195px;
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     height: 200px;
   }
 }
@@ -2044,7 +2044,7 @@ h4 {
     padding-top: 350px;
   }
 
-  .service__block-extensive-image {
+  .webp .service__block-extensive-image {
     height: 400px;
   }
 }
@@ -2055,6 +2055,6 @@ h4 {
 
 .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat left; }
 
-.webp .service__block-extensive-image { background: url(../img/service3.webp) no-repeat left; }
+.webp .webp .service__block-extensive-image { background: url(../img/service3.webp) no-repeat left; }
 
 .webp .service__hero { background: url(../img/service-bg.webp) no-repeat right; }
