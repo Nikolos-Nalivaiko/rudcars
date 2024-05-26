@@ -496,11 +496,10 @@ h4 {
   margin-top: 10px;
 }
 
-.no-webp .tradeIn__image, .no-webp .webp .tradeIn__image {
+.no-webp .tradeIn__image {
   background: url(../img/tradeIn-bg.png) no-repeat; }
 
-.tradeIn__image,
-.webp .tradeIn__image {
+.tradeIn__image {
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -1304,8 +1303,7 @@ h4 {
     max-width: 570px;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: 600px;
   }
 
@@ -1472,8 +1470,7 @@ h4 {
     max-width: calc(400px + 170 * (100vw - 768px) / (1600 - 768));
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: calc(300px + 300 * (100vw - 768px) / (1600 - 768));
   }
 
@@ -1624,12 +1621,18 @@ h4 {
     max-width: 100%;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: 300px;
   }
 
-  .tradeIn__image,
+  .tradeIn__image {
+    background-size: 100%;
+    width: 100%;
+    background-position: bottom;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .webp .tradeIn__image {
     background-size: 100%;
     width: 100%;
@@ -1671,21 +1674,24 @@ h4 {
     padding-top: calc(200px + 100 * (100vw - 320px) / (1600 - 320));
   }
 
-  .tradeIn__image,
+  .tradeIn__image {
+    max-height: calc(170px + 80 * (100vw - 320px) / (1600 - 320));
+  }
+
   .webp .tradeIn__image {
     max-height: calc(170px + 80 * (100vw - 320px) / (1600 - 320));
   }
 
   .service__blocks {
-    gap: calc(85px + 359 * (100vw - 320px) / (1600 - 320));
+    gap: calc(120px + 324 * (100vw - 320px) / (1600 - 320));
   }
 
   .service__blocks {
-    margin-top: calc(75px + 325 * (100vw - 320px) / (1600 - 320));
+    margin-top: calc(105px + 295 * (100vw - 320px) / (1600 - 320));
   }
 
   .service__block {
-    padding-top: calc(75px + 170 * (100vw - 320px) / (1600 - 320));
+    padding-top: calc(95px + 150 * (100vw - 320px) / (1600 - 320));
   }
 
   .service__block-image {
@@ -1702,21 +1708,24 @@ h4 {
     padding-top: 200px;
   }
 
-  .tradeIn__image,
+  .tradeIn__image {
+    max-height: 170px;
+  }
+
   .webp .tradeIn__image {
     max-height: 170px;
   }
 
   .service__blocks {
-    gap: 85px;
+    gap: 120px;
   }
 
   .service__blocks {
-    margin-top: 75px;
+    margin-top: 105px;
   }
 
   .service__block {
-    padding-top: 75px;
+    padding-top: 95px;
   }
 
   .service__block-image {
@@ -1914,7 +1923,10 @@ h4 {
     padding-top: 300px;
   }
 
-  .tradeIn__image,
+  .tradeIn__image {
+    max-height: 250px;
+  }
+
   .webp .tradeIn__image {
     max-height: 250px;
   }
@@ -1940,6 +1952,6 @@ h4 {
 
 .webp .about__image { background: url(../img/about-bg.webp) no-repeat right; }
 
-.webp .tradeIn__image, .webp .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat; }
+.webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat; }
 
 .webp .service__hero { background: url(../img/service-bg.webp) no-repeat right; }
