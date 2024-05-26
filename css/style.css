@@ -1629,6 +1629,9 @@ h4 {
     width: 300px;
   }
 
+  .no-webp .tradeIn__image, .no-webp .webp .tradeIn__image {
+    background: url(../img/tradeIn-bg.png) no-repeat; }
+
   .tradeIn__image,
   .webp .tradeIn__image {
     background-position: bottom;
@@ -1943,3 +1946,8 @@ h4 {
 .webp .tradeIn__image, .webp .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat; }
 
 .webp .service__hero { background: url(../img/service-bg.webp) no-repeat right; }
+
+@media (max-width: 768px) {
+
+  .webp .tradeIn__image, .webp .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat; }
+}
