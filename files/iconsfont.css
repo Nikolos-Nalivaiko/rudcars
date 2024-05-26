@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?c8rz0r');
-  src:  url('fonts/icons.eot?c8rz0r#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?c8rz0r') format('truetype'),
-    url('fonts/icons.woff?c8rz0r') format('woff'),
-    url('fonts/icons.svg?c8rz0r#icons') format('svg');
+  src:  url('fonts/icons.eot?tz62tf');
+  src:  url('fonts/icons.eot?tz62tf#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?tz62tf') format('truetype'),
+    url('fonts/icons.woff?tz62tf') format('woff'),
+    url('fonts/icons.svg?tz62tf#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="__icon-"]::before, [class*=" __icon-"]::before, [class^="__icon-"]::after, [class*=" __icon-"]::after{
+[class^="__icon-"]::before, [class*=" __icon-"]::before, [class^="__icon-"]::after, [class*=" __icon-"]::after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -25,13 +25,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.__icon-arrow-slide:before {
+  content: "\e904";
+}
+.__icon-arrow-slider-left:before {
+  content: "\e905";
+}
+.__icon-arrow-slider-right:before {
+  content: "\e906";
+}
+.__icon-facebook:before {
+  content: "\e907";
+}
+.__icon-legal:before {
+  content: "\e908";
+}
+.__icon-li-icon:before {
+  content: "\e909";
+}
+.__icon-review:before {
+  content: "\e90a";
+}
+.__icon-time:before {
+  content: "\e90b";
+}
 .__icon-inst:before {
   content: "\e900";
 }
 .__icon-telegram:before {
   content: "\e901";
 }
-.__icon-arrow-right:after {
+.__icon-arrow-right:before {
   content: "\e902";
 }
 .__icon-arrow-top-right::after {
