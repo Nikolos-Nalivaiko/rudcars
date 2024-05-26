@@ -496,11 +496,10 @@ h4 {
   margin-top: 10px;
 }
 
-.no-webp .tradeIn__image, .no-webp .webp .tradeIn__image {
+.no-webp .tradeIn__image {
   background: url(../img/tradeIn-bg.png) no-repeat left; }
 
-.tradeIn__image,
-.webp .tradeIn__image {
+.tradeIn__image {
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -1304,8 +1303,7 @@ h4 {
     max-width: 570px;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: 600px;
   }
 
@@ -1472,8 +1470,7 @@ h4 {
     max-width: calc(400px + 170 * (100vw - 768px) / (1600 - 768));
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: calc(300px + 300 * (100vw - 768px) / (1600 - 768));
   }
 
@@ -1624,16 +1621,13 @@ h4 {
     max-width: 100%;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     width: 300px;
   }
 
-  .no-webp .tradeIn__image, .no-webp .webp .tradeIn__image {
-    background: url(../img/tradeIn-bg.png) no-repeat bottom; }
-
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
+    background-size: 100%;
+    background-position: bottom;
     width: 100%;
   }
 
@@ -1670,8 +1664,7 @@ h4 {
     padding-top: calc(200px + 100 * (100vw - 320px) / (1600 - 320));
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     max-height: calc(170px + 80 * (100vw - 320px) / (1600 - 320));
   }
 
@@ -1701,8 +1694,7 @@ h4 {
     padding-top: 200px;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     max-height: 170px;
   }
 
@@ -1913,8 +1905,7 @@ h4 {
     padding-top: 300px;
   }
 
-  .tradeIn__image,
-  .webp .tradeIn__image {
+  .tradeIn__image {
     max-height: 250px;
   }
 
@@ -1939,11 +1930,6 @@ h4 {
 
 .webp .about__image { background: url(../img/about-bg.webp) no-repeat right; }
 
-.webp .tradeIn__image, .webp .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat left; }
+.webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat left; }
 
 .webp .service__hero { background: url(../img/service-bg.webp) no-repeat right; }
-
-@media (max-width: 768px) {
-
-  .webp .tradeIn__image, .webp .webp .tradeIn__image { background: url(../img/tradeIn-bg.webp) no-repeat bottom; }
-}
