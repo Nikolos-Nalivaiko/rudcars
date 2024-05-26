@@ -522,7 +522,10 @@ h4 {
 
 .service__block-image {
   position: absolute;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .service__block-description {
@@ -1491,7 +1494,7 @@ h4 {
   }
 
   .service__blocks {
-    margin-top: calc(130px + 75 * (100vw - 320px) / (1600 - 320));
+    margin-top: calc(100px + 105 * (100vw - 768px) / (1600 - 768));
   }
 
   .service__block {
@@ -1650,6 +1653,10 @@ h4 {
   }
 
   .service__blocks {
+    margin-top: 100px;
+  }
+
+  .service__blocks {
     -ms-grid-columns: (1)[1fr];
     grid-template-columns: repeat(1fr, 1);
   }
@@ -1675,11 +1682,7 @@ h4 {
   }
 
   .service__block-image {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 90%;
+    width: 100%;
   }
 
   .service__block-extensive {
@@ -1701,12 +1704,16 @@ h4 {
     max-height: calc(170px + 80 * (100vw - 320px) / (1600 - 320));
   }
 
+  .service__blocks {
+    margin-top: calc(130px + 220 * (100vw - 320px) / (1600 - 320));
+  }
+
   .service__block:first-child {
-    margin-bottom: calc(85px + 250 * (100vw - 320px) / (1600 - 320));
+    margin-bottom: calc(100px + 350 * (100vw - 320px) / (1600 - 320));
   }
 
   .service__block-image {
-    top: calc(-100px + -400 * (100vw - 320px) / (1600 - 320));
+    top: calc(-120px + -480 * (100vw - 320px) / (1600 - 320));
   }
 }
 
@@ -1723,12 +1730,16 @@ h4 {
     max-height: 170px;
   }
 
+  .service__blocks {
+    margin-top: 130px;
+  }
+
   .service__block:first-child {
-    margin-bottom: 85px;
+    margin-bottom: 100px;
   }
 
   .service__block-image {
-    top: -100px;
+    top: -120px;
   }
 }
 
@@ -1849,10 +1860,6 @@ h4 {
     margin-top: 20px;
   }
 
-  .service__blocks {
-    margin-top: 130px;
-  }
-
   .service__block {
     padding-top: 50px;
   }
@@ -1922,12 +1929,16 @@ h4 {
     max-height: 250px;
   }
 
+  .service__blocks {
+    margin-top: 350px;
+  }
+
   .service__block:first-child {
-    margin-bottom: 335px;
+    margin-bottom: 450px;
   }
 
   .service__block-image {
-    top: -500px;
+    top: -600px;
   }
 }
 
