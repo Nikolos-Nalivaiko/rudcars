@@ -117,6 +117,7 @@ input,
 textarea {
   font-family: "Montserrat";
   color: #161616;
+  background: none;
 }
 
 html,
@@ -350,6 +351,9 @@ h4 {
 .offers__block {
   border-radius: 10px;
   display: inline-block;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   -webkit-box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
 }
@@ -389,41 +393,56 @@ h4 {
 
 .offers__block-footer {
   border-top: 1px solid #D9D9D9;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .offers__block-price {
-  padding: 20px 0;
   font-weight: 600;
+}
+
+.offers__block-price-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
   border-right: 1px solid #D9D9D9;
 }
 
-.offers__block-btn {
-  padding: 20px 0;
-  font-weight: 500;
-  display: inline-block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.offers__block-subprice {
+  color: #5B5B5B;
+  text-decoration: line-through;
 }
 
-.offers__block-btn:hover {
-  color: #FE0000;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.offers__block-btn {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
 }
 
 .offers__block-btn::after {
-  font-size: 15px;
+  padding-left: 15px;
 }
 
 .about {
@@ -683,6 +702,14 @@ h4 {
   color: #C9C9C9;
   border-radius: 10px;
   line-height: normal;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contacts__socials-icon:hover {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .contacts__map {
@@ -1253,20 +1280,16 @@ h4 {
     padding: 25px;
   }
 
-  .offers__block-footer {
-    padding-right: 25px;
-  }
-
-  .offers__block-footer {
-    padding-left: 25px;
-  }
-
   .offers__block-price {
     font-size: 20px;
   }
 
-  .offers__block-btn::after {
-    padding-left: 15px;
+  .offers__block-price-inner {
+    padding-top: 20px;
+  }
+
+  .offers__block-price-inner {
+    padding-bottom: 20px;
   }
 
   .about__description {
@@ -1584,16 +1607,12 @@ h4 {
     padding: calc(20px + 5 * (100vw - 320px) / (1600 - 320));
   }
 
-  .offers__block-footer {
-    padding-right: calc(20px + 5 * (100vw - 320px) / (1600 - 320));
+  .offers__block-price-inner {
+    padding-top: calc(15px + 5 * (100vw - 320px) / (1600 - 320));
   }
 
-  .offers__block-footer {
-    padding-left: calc(20px + 5 * (100vw - 320px) / (1600 - 320));
-  }
-
-  .offers__block-btn::after {
-    padding-left: calc(10px + 5 * (100vw - 320px) / (1600 - 320));
+  .offers__block-price-inner {
+    padding-bottom: calc(15px + 5 * (100vw - 320px) / (1600 - 320));
   }
 
   .about__description {
@@ -2215,15 +2234,29 @@ h4 {
   }
 
   .offers__block-footer {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-    padding-right: 0;
-    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  .offers__block-price {
+  .offers__block-price-inner {
     border-right: none;
     border-bottom: 1px solid #D9D9D9;
+  }
+
+  .offers__block-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .catalog__navbar {
@@ -2276,16 +2309,12 @@ h4 {
     padding: 20px;
   }
 
-  .offers__block-footer {
-    padding-right: 20px;
+  .offers__block-price-inner {
+    padding-top: 15px;
   }
 
-  .offers__block-footer {
-    padding-left: 20px;
-  }
-
-  .offers__block-btn::after {
-    padding-left: 10px;
+  .offers__block-price-inner {
+    padding-bottom: 15px;
   }
 
   .about__description {
