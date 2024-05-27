@@ -55,7 +55,7 @@
 .__icon-telegram:before {
   content: "\e901";
 }
-.__icon-arrow-right:before {
+.__icon-arrow-right::after {
   content: "\e902";
 }
 .__icon-arrow-top-right::after {
