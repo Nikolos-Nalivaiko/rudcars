@@ -343,9 +343,9 @@ h4 {
   align-items: center;
 }
 
-.offers__blocks-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.offers__slide {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .offers__link {
@@ -455,10 +455,18 @@ h4 {
   width: 100%;
   text-align: center;
   font-weight: 500;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .offers__block-btn::after {
   padding-left: 15px;
+}
+
+.offers__block-btn:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #FE0000;
 }
 
 .about {
