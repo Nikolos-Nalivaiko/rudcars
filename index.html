@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240529000847">
-    <link rel="stylesheet" href="files/iconsfont.css?_v=20240529000847">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240529000847"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240529122655">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240529122655">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240529122655"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240529122655"></script>
     <title>Головна сторінка</title>
 </head>
 <body>
@@ -45,107 +46,116 @@
             <a href="" class="__icon-arrow-right offers__link">Весь ассортимент</a>
         </div>
 
-        <div class="offers__blocks">
-            <div class="offers__block">
-
-                <div class="offers__block-header">
-                    <p class="offers__block-headline">Skoda Superb 2014</p>
-                    <p class="offers__block-title">Дизель, 2 л.</p>
-                </div>
-
-                <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
-
-                <div class="offers__block-infos">
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Пробіг</p>
-                        <p class="offers__block-info-title">310 000 км.</p>
-                    </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Тип КПП</p>
-                        <p class="offers__block-info-title">Механіка</p>
-                    </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Потужність</p>
-                        <p class="offers__block-info-title">215 к.с</p>
-                    </div>
-                </div>
-
-                <div class="offers__block-footer">
-                    <div class="offers__block-price-inner">
-                        <p class="offers__block-price">$13,200</p>
-                        <p class="offers__block-subprice">$14,000</p>
-                    </div>
-                    <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
-                </div>
-
-            </div>
-
-            <div class="offers__block">
-
-                <div class="offers__block-header">
-                    <p class="offers__block-headline">Skoda Superb 2014</p>
-                    <p class="offers__block-title">Дизель, 2 л.</p>
-                </div>
-
-                <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
-
-                <div class="offers__block-infos">
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Пробіг</p>
-                        <p class="offers__block-info-title">310 000 км.</p>
-                    </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Тип КПП</p>
-                        <p class="offers__block-info-title">Механіка</p>
-                    </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Потужність</p>
-                        <p class="offers__block-info-title">215 к.с</p>
+        <div class="swiper offers__blocks">
+            <div class="swiper-wrapper offers__blocks-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="offers__block">
+                        <div class="offers__block-header">
+                            <p class="offers__block-headline">Skoda Superb 2014</p>
+                            <p class="offers__block-title">Дизель, 2 л.</p>
+                        </div>
+        
+                        <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
+        
+                        <div class="offers__block-infos">
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Пробіг</p>
+                                <p class="offers__block-info-title">310 000 км.</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Тип КПП</p>
+                                <p class="offers__block-info-title">Механіка</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Потужність</p>
+                                <p class="offers__block-info-title">215 к.с</p>
+                            </div>
+                        </div>
+        
+                        <div class="offers__block-footer">
+                            <div class="offers__block-price-inner">
+                                <p class="offers__block-price">$13,200</p>
+                            </div>
+                            <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
+                        </div>
+        
                     </div>
                 </div>
 
-                <div class="offers__block-footer">
-                    <div class="offers__block-price-inner">
-                        <p class="offers__block-price">$13,200</p>
+                <div class="swiper-slide">
+                    <div class="offers__block">
+
+                        <div class="offers__block-header">
+                            <p class="offers__block-headline">Skoda Superb 2014</p>
+                            <p class="offers__block-title">Дизель, 2 л.</p>
+                        </div>
+        
+                        <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
+        
+                        <div class="offers__block-infos">
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Пробіг</p>
+                                <p class="offers__block-info-title">310 000 км.</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Тип КПП</p>
+                                <p class="offers__block-info-title">Механіка</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Потужність</p>
+                                <p class="offers__block-info-title">215 к.с</p>
+                            </div>
+                        </div>
+        
+                        <div class="offers__block-footer">
+                            <div class="offers__block-price-inner">
+                                <p class="offers__block-price">$13,200</p>
+                            </div>
+                            <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
+                        </div>
+        
                     </div>
-                    <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
                 </div>
 
-            </div>
+                <div class="swiper-slide">
+                    <div class="offers__block">
 
-            <div class="offers__block">
-
-                <div class="offers__block-header">
-                    <p class="offers__block-headline">Skoda Superb 2014</p>
-                    <p class="offers__block-title">Дизель, 2 л.</p>
-                </div>
-
-                <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
-
-                <div class="offers__block-infos">
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Пробіг</p>
-                        <p class="offers__block-info-title">310 000 км.</p>
+                        <div class="offers__block-header">
+                            <p class="offers__block-headline">Skoda Superb 2014</p>
+                            <p class="offers__block-title">Дизель, 2 л.</p>
+                        </div>
+        
+                        <picture><source srcset="img/block-preview.webp" type="image/webp"><img src="img/block-preview.jpg" alt="preview" class="offers__block-image"></picture>
+        
+                        <div class="offers__block-infos">
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Пробіг</p>
+                                <p class="offers__block-info-title">310 000 км.</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Тип КПП</p>
+                                <p class="offers__block-info-title">Механіка</p>
+                            </div>
+                            <div class="offers__block-info">
+                                <p class="offers__block-info-subtitle">Потужність</p>
+                                <p class="offers__block-info-title">215 к.с</p>
+                            </div>
+                        </div>
+        
+                        <div class="offers__block-footer">
+                            <div class="offers__block-price-inner">
+                                <p class="offers__block-price">$13,200</p>
+                            </div>
+                            <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
+                        </div>
+        
                     </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Тип КПП</p>
-                        <p class="offers__block-info-title">Механіка</p>
-                    </div>
-                    <div class="offers__block-info">
-                        <p class="offers__block-info-subtitle">Потужність</p>
-                        <p class="offers__block-info-title">215 к.с</p>
-                    </div>
-                </div>
-
-                <div class="offers__block-footer">
-                    <div class="offers__block-price-inner">
-                        <p class="offers__block-price">$13,200</p>
-                    </div>
-                    <a href="info.html" class="offers__block-btn __icon-arrow-top-right">Детальніше</a>
                 </div>
 
             </div>
         </div>
+
     </section>
 
     <section class="about container section__default">
@@ -279,6 +289,7 @@
     </div>
 </footer>  
 </div>
-<script src="js/app.min.js?_v=20240529000847"></script>  
+<script src="js/app.min.js?_v=20240529122655"></script>  
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240529122655"></script> -->
 </body>
 </html>
