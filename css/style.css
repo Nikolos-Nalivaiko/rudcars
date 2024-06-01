@@ -327,6 +327,17 @@ h4 {
   font-size: 18px;
 }
 
+.img {
+  background-color: red;
+  height: 200px;
+}
+
+.swipe {
+  overflow: hidden;
+  background-color: yellowgreen;
+  height: 200px;
+}
+
 .offers__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +376,7 @@ h4 {
 }
 
 .offers__block {
+  width: 100%;
   border-radius: 10px;
   display: inline-block;
   -ms-flex-item-align: start;
